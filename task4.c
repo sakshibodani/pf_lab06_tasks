@@ -1,23 +1,18 @@
 #include <stdio.h>
 #include <math.h>
-int main() {
+int main() 
+{
     int num, original, remainder, sum=0;
-    
-    printf("Enter a number: ");
+     printf("Enter a number: ");
     scanf("%d", &num);
-    
     original=num;
-    
-
-    while (num != 0)
+     while (num != 0)
 	{
         remainder = num % 10;           
         sum = sum + pow(remainder,3);  
         num = num / 10;                 
     }
-    
-   
-    if (sum == original)
+     if (sum==original)
 	{
         printf("%d is an Armstrong number\n", original);
     } 
@@ -28,3 +23,4 @@ int main() {
     
     return 0;
 }
+
